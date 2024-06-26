@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sample-spring-boot-app
+  title: sample-spring-boot-app
+  annotations:
+    circleci.com/project-slug: github/dawncoll/sample-spring-boot-app
+    github.com/project-slug: dawncoll/sample-spring-boot-app
+    sonarqube.org/project-key: dawncoll_sample-spring-boot-app
+  tags:
+    - spring-boot
+    - java
+    - maven
+    - circleci
+    - renovate
+    - sonarqube
+spec:
+  type: service
+  owner: dawncoll
+  lifecycle: experimental
