@@ -4,7 +4,17 @@ public class Person {
 
     private Long id;
 
-    public Long getId() {
+    private String nom;
+    
+    public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public Long getId() {
         return id;
     }
 
