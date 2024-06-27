@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Analyze on SonarCloud
-          command: mvn verify sonar:sonar
+          command: mvn clean verify sonar:sonar -Dsonar.projectKey=dawncoll_sample-spring-boot-app -Dsonar.organization=dawncoll -Dsonar.login=b3420bf1ab87f29580e0de8cd0fdeb50e1ea1dd0
 
 executors:
   jdk:
