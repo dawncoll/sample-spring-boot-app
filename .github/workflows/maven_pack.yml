@@ -31,7 +31,7 @@ jobs:
     - name: Build and analyze
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=dawncoll_sample-spring-boot-app -Dsonar.organization=dawncoll
+      run: mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=dawncoll_sample-spring-boot-app -Dsonar.organization=dawncoll
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
